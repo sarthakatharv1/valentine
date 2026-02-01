@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Will You Be My Valentine?</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #ffe6f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 16px;
+      text-align: center;
+      max-width: 360px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+    h1 {
+      color: #ff4d6d;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 999px;
+      background: #ff4d6d;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      opacity: 0.9;
+    }
+    img {
+      width: 100%;
+      border-radius: 12px;
+      margin-top: 15px;
+      display: none;
+    }
+    .from {
+      margin-top: 12px;
+      font-style: italic;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Aajuu Atharv, will you be my Valentine? 💖</h1>
+    <p>It’s your time to shine, baby girl ✨</p>
+    <button onclick="reveal()">Tap for a surprise 😈</button>
+    <img id="surprise" src="https://i.imgur.com/4M7IWwP.jpeg" alt="Surprise" />
+    <div class="from">— Sarthak Atharv</div>
+  </div>
+
+  <script>
+    function reveal() {
+      document.getElementById("surprise").style.display = "block";
+    }
+  </script>
+</body>
+</html>
